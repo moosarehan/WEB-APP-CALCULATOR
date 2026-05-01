@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Calculator | Premium Design</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for premium typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@400;500;600&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="calculator-container">
+        <!-- Theme Toggle -->
+        <div class="theme-switch-wrapper">
+            <button id="theme-toggle" class="theme-toggle" title="Switch Theme">
+                <span class="sun-icon">☀️</span>
+                <span class="moon-icon">🌙</span>
+            </button>
+        </div>
+        
+        <div class="calculator-card">
+            <!-- Display Area -->
+            <div class="display-container">
+                <div id="angle-mode" class="angle-badge" title="Toggle DEG/RAD">DEG</div>
+                <div id="expression-line" class="expression-line"></div>
+                <div id="result-line" class="result-line">0</div>
+            </div>
+
+            <!-- Button Grid -->
+            <div class="button-grid">
+                <!-- Row 1: Scientific Functions & AC -->
+                <button class="btn btn-sci" data-val="sin">sin</button>
+                <button class="btn btn-sci" data-val="cos">cos</button>
+                <button class="btn btn-sci" data-val="tan">tan</button>
+                <button class="btn btn-action" data-val="ac">AC</button>
+
+                <!-- Row 2: Sci, Log, π, e, Erase -->
+                <button class="btn btn-sci" data-val="log">log</button>
+                <button class="btn btn-sci" data-val="pi">π</button>
+                <button class="btn btn-sci" data-val="e">e</button>
+                <button class="btn btn-erase" data-val="backspace" aria-label="backspace">⌫</button>
+
+                <!-- Row 3: x^y, Parentheses, Divide -->
+                <button class="btn btn-sci" data-val="pow">x^y</button>
+                <button class="btn btn-paren" data-val="(">(</button>
+                <button class="btn btn-paren" data-val=")">)</button>
+                <button class="btn btn-op" data-val="/">÷</button>
+
+                <!-- Row 4: 7, 8, 9, Multiply -->
+                <button class="btn btn-num" data-val="7">7</button>
+                <button class="btn btn-num" data-val="8">8</button>
+                <button class="btn btn-num" data-val="9">9</button>
+                <button class="btn btn-op" data-val="*">×</button>
+
+                <!-- Row 5: 4, 5, 6, Subtract -->
+                <button class="btn btn-num" data-val="4">4</button>
+                <button class="btn btn-num" data-val="5">5</button>
+                <button class="btn btn-num" data-val="6">6</button>
+                <button class="btn btn-op" data-val="-">−</button>
+
+                <!-- Row 6: 1, 2, 3, Add -->
+                <button class="btn btn-num" data-val="1">1</button>
+                <button class="btn btn-num" data-val="2">2</button>
+                <button class="btn btn-num" data-val="3">3</button>
+                <button class="btn btn-op" data-val="+">+</button>
+
+                <!-- Row 7: 0, ., %, Equals -->
+                <button class="btn btn-num" data-val="0">0</button>
+                <button class="btn btn-num" data-val=".">.</button>
+                <button class="btn btn-num" data-val="%">%</button>
+                <button class="btn btn-equals" data-val="=">=</button>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
